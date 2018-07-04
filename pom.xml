@@ -26,6 +26,16 @@
     <module>ch-writing-plugins</module>
     <module>ch-alternate-plugins</module>
   </modules> -->
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <url>http://192.168.137.1:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshotRepository</id>
+      <url>http://192.168.137.1:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
   
   <build>
     <finalName>mvnexbook-examples-${project.version}</finalName>
